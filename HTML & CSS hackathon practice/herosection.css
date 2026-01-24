@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.one {
+    width: 100%;
+}
+
+.one .mostgrand {
+    margin: 45px 135px 71px 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: #fff;
+    max-width: 1600px;
+    background-color: #000;
+    padding: 70px 20px 70px 65px;
+}
+
+.one .img {
+    width: 600px;
+    height: 420px;
+}
+
+.one .img img {
+    width: 600px;
+    height: 100%;
+}
+
+.herosec_contianer{
+    display: flex;gap: 30px;
+    align-items: center;
+}
+
+.herosec_contianer .hero_circle{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.hero_grand1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 41px;
+}
+
+.hero_grand1 p:nth-child(1){
+    font-size: 17px;
+    line-height: 0;
+    color: #00ff66;
+}
+
+.hero_grand1 h1:nth-child(2){
+    font-size: 53px;
+    font-weight: 800;
+}
+.one button{
+    background-color: #00ff66;
+    padding: 16px 48px;
+    border: none;
+    color: #fff;
+    font-weight: 450;
+    border-radius: 5px;
+}
+
+.hero_circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.hero_circle strong:first-child{
+    font-size: 16;
+    font-weight: 550;
+}
+
+.hero_circle strong:last-child{
+    font-size: 13px;
+    font-weight: 400;
+}

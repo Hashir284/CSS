@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+  --glo: black;
+  --r: red;
+}
+
+.container {
+  perspective: 400px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .card, .card1 {
+    width: 150px;
+    writing-mode: vertical-lr;
+    height: 200px;
+    background: var(--r);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.8s;
+
+    &.card:hover {
+      /* Rotate 45deg along vector (1, 1, 0) */
+      transform: rotate3d(1, 1, 0, 180deg);
+      /* Or for simple translation */
+      /* transform: translate3d(90px, 90px, 150px); */
+    }
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+  <div class="card">3D CARD</div>
+  <div class="card1">3D CARD</div>
+</div>
+</body>
+</html>

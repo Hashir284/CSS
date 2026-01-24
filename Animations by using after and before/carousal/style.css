@@ -1,0 +1,37 @@
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      place-items: center;
+    }
+    html{
+      font-size: 62.5%;
+    }
+    .container-img{
+      width: 50vw;
+      height: 45rem;
+      border-radius: 1rem; 
+      background-image: url("image copy.png");
+      box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      animation: hashir 10s linear 0s infinite;
+    }
+@keyframes hashir {
+    0% {
+        background-image: url("image copy.png");
+    }
+    33.3% {
+        background-image: url("image copy 2.png");
+    }
+    66.6%{
+        background-image: url("image copy 3.png");
+    }
+    100% {
+        background-image: url("image copy 4.png");
+    }
+}

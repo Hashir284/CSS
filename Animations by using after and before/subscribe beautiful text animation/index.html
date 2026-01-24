@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #191825;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            text-shadow: -1px 2px 3px rba(236, 247, 76, 0.2);
+            font-size: 96px;
+            text-transform: uppercase;
+            position: relative;
+            color: #fff;
+        }
+
+        h1::before {
+            content: "subscribe...";
+            letter-spacing: 0px;
+            text-transform: uppercase;
+            position: absolute;
+            color: #e9b824;
+            top: 0;
+            width: 100%;
+            overflow: hidden;
+            font-size: 96px;
+            left: 0;
+            /* right: 0; */
+            border-right: 2px solid #e9b824;
+            animation: superb 9s linear 0s alternate;
+            animation-iteration-count: infinite;
+            /* animation: superb 3s linear; */
+        }
+        @keyframes superb{
+            0%{
+                width: 0%;
+            }
+            33.3%{
+                width: 100%;
+            }
+            66.6%{
+                width: 0%;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>
+        Subscribe...
+    </h1>
+</body>
+
+</html>

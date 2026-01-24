@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newton cradle</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            display: flex;
+            /* place-items: center; */
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #191825;
+        }
+
+        .cradle {
+            /* padding: 20%; */
+            display: flex;
+            justify-content: center;
+            /* align-items: end;  */
+            width: 50rem;
+            background: transparent;
+            height: 50rem;
+            gap: 4.54rem;
+            border-radius: .5rem;
+            border-top: 1rem solid #865dff;
+
+        }
+
+        .item {
+            width: .5rem;
+            height: 20rem;
+            background-color: #865fff;
+            position: relative;
+        }
+
+        .cradle div::after {
+            content: "";
+            position: absolute;
+            bottom: -28px;
+            left: -22px;
+            aspect-ratio: 1;
+            /* left: -2.5pc; */
+            /* left:50%; */
+            /* transform:translateX(-50%); */
+            /* margin: auto; */
+            /* top: 36.5%; */
+            /* bottom: 0; */
+            width: 5rem;
+
+            border-radius: 50%;
+            background-color: #865dff;
+        }
+
+        .cradle div:first-child {
+            animation: left 3s linear infinite;
+            transform-origin: top left;
+        }
+
+        .cradle div:last-child {
+            animation: right 3s linear infinite 1.5s;
+            transform-origin: top right;
+        }
+
+        @keyframes left {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(30deg);
+            }
+
+            50% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes right {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(-30deg);
+            }
+
+            50% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cradle">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+
+</html>

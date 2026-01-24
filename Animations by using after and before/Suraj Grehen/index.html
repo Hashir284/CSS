@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+                    background-color: #ffe4d6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* background: #191825; */
+        }
+
+        div {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 850px;
+            height: 550px;
+            background-color: #FFC67D;
+            z-index: 100;
+            animation: skychange 10s linear infinite;
+        }
+
+        @keyframes skychange {
+            0% {
+                background-color: #ffbb5cb5;
+            }
+
+            25% {
+                background-color: #fcbf49;
+            }
+
+            50% {
+                background-color: #000000;
+            }
+
+            75% {
+                background-color: #fcbf49;
+            }
+
+            100% {
+                background-color: #ffbb5cb5;
+            }
+        }
+
+        div #ss {
+
+            position: relative;
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            z-index: 100;
+            background-color: #E25E3E !important;
+        }
+
+        #ss::after {
+
+            content: "";
+            position: absolute;
+            /* right: 0; */
+            top: 0;
+            left: 0;
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            animation: circle 10s ease-in-out infinite;
+            background-color: #000;
+        }
+
+        @keyframes circle {
+            0% {
+                translate: 100%;
+                scale: 1;
+            }
+
+            50% {
+                translate: 0;
+                scale: 0.9;
+            }
+
+            100% {
+                translate: -100%;
+                /* scale: 0.9; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="s">
+        <div id="ss"></div>
+    </div>
+</body>
+
+</html>

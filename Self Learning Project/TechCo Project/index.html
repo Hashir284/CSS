@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-CO</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        word-spacing: 4px;
+        
+        margin: 0;
+    }
+
+    header {
+        background: linear-gradient(to bottom, #337eee, #357ae8, #3f72d0, #3366cc);
+        position: relative;
+        /* z-index: 10; */
+        /* display: flex; */
+        /* navbar always on top */
+    }
+
+    #img {
+        /* z-index: 2; */
+        position: relative;
+        vertical-align: bottom;
+    }
+
+    .Stg {
+        color: #f0f8ff;
+        padding: 25px;
+        padding-left: 80px;
+        padding-right: 40%;
+        font-size: 28px;
+        position: relative;
+        /* z-index: 2; */
+    }
+
+    nav,
+    ul,
+    .stg,
+    li {
+        display: inline-block;
+    }
+
+    nav {
+        position: absolute;
+        left: 690px;
+        top: 11px;
+        z-index: 19;
+    }
+
+    nav li {
+        margin-left: 5.5rem;
+    }
+
+    .anc { text-decoration: none; color: #f0f8ff; font-weight: 600; font-size: 18px;}
+
+    nav .active { color: #000000ac; /* stays same brightness */
+  
+
+  text-decoration: underline solid rgb(7, 7, 7);
+  z-index: 100;
+  /* font-weight:; */
+  font-weight: 800;}
+
+
+nav ul li a:hover {
+  color: #ffffff; /* stays same brightness */
+  text-shadow:
+    0 0 5px rgba(0, 0, 0, 0.7),
+    0 0 10px rgba(0, 0, 0, 0.8),
+    0 4px 15px rgba(0, 0, 0, 0.85);
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.7));
+  text-decoration: none;
+  font-weight: 800;
+  /* font-size: 21px; same size so no jump */
+}
+
+nav ul li a:active {
+  color: #fffffff4; /* stays same brightness */
+  
+
+  text-decoration: underline solid rgb(149, 189, 202);
+  font-weight: 700;
+  /* font-size: 21px; same size so no jump */
+}
+
+
+
+
+
+
+    /* nav .anc:hover {
+        z-index: 15;
+  color: #00bfff; /* bright aqua hover color */
+  /* text-shadow: 0 0 10px rgba(0, 191, 255, 0.8); */
+  /* transition: all 0.3s ease; */
+
+
+    h1 {
+        margin-top: 10px;
+        /* margin-left: 35px; */
+        font-size: 38px;
+        display: inline-block;
+    }
+
+    .h1 {
+        margin-bottom: 20px;
+    }
+
+    img {
+        display: inline-block;
+        /* position: sticky; */
+        margin-left: 30px;
+        margin-top: 1px;
+        vertical-align: bottom;
+        /* border-top: 100px solid #fff; */
+        /* margin-top: 18.3%; */
+        /* z-index: 1; image stays below navbar */
+    }
+
+    .p, .about {
+        display: inline-block;
+        margin-left: 26.5%;
+        margin-top: 0;
+        font-weight: 600;
+        /* margin-left: 35%; */
+        /* letter-spacing: 0.75px; */
+        line-height: 1.8;
+        word-spacing: 15;
+
+    }
+
+    .about{
+        margin-bottom: 8.7px;
+    }
+
+    .center {
+        text-align: center;
+        /* position: fixed;
+        left: 24%; */
+        /* margin: auto; */
+        /* line-height: 1.5; */
+        letter-spacing: 0.5px;
+
+    }
+
+    button {
+        margin-left: 26.8%;
+        padding: 10.5px;
+        width: 8.5%;
+        /* font-size: 22px; */
+        /* border-radius: 35% 30% 35% 30%; */
+        border-radius: 30px;
+        background-color: rgb(56, 148, 209);
+        border: 1px solid rgb(26, 89, 161);
+    }
+
+    button:hover {
+  background-color: #2a5be3; /* slightly deeper blue */
+  border: 2px solid #00b4ff; /* neon aqua border */
+  color: #eaf8ff; /* light text for contrast */
+  box-shadow: 0 0 18px rgba(0, 180, 255, 0.8),
+              0 0 25px rgba(42, 91, 227, 0.6);
+  /* transform: scale(1.05);
+  transition: all 0.3s ease; */
+}
+
+
+    .re {
+        margin-top: 40px;
+        margin-left: 27%;
+        font-size: 30px;
+        /* margin-bottom: 0;
+        padding-bottom: 0; */
+    }
+
+    .two {
+        /* background-color: #fff; */
+        /* text-align: center; */
+        /* padding-left: 50px; */
+        /* padding-left: 40px; */
+        /* padding-right: 40px; */
+        /* padding-left: 50px; */
+        /* margin: auto; */
+        background-color: #1480c85d;
+        margin-top: 2px;
+        /* display: inline-block; */
+    }
+
+    .os {
+        padding-top: 30px;
+        /* margin-top: 60px;
+        margin-left: 21.5%; */
+        font-size: 34px;
+        text-align: center;
+        margin-right: 30px;
+        /* margin-left: 50px; */
+
+
+        /* display: inline-block; */
+        /* width: 55%; */
+        /* margin: auto; */
+        /* margin-left: 26.5%; */
+    }
+
+    .cotner {
+        margin-top: 25px;
+        text-align: center;
+        padding-bottom: 40px;
+        /* margin: auto; */
+    }
+
+    .imger {
+        height: 275px;
+        display: inline-block;
+        /* margin-right: 10; */
+        background-color: #FFFEFF;
+        /* z-index: 10; */
+        width: 17%;
+        margin-right: 30px;
+        /* left: 30px; */
+        border-radius: 7px;
+        vertical-align: top;
+        padding-bottom: 19px;
+        padding-top: 0;
+    }
+
+    .imger:hover{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+        /* width: 17.5%; */
+        
+    }
+
+    /* .m{
+        margin-left: 25px;
+    } */
+
+    img {
+        /* filter: drop-shadow(0px 0px 1px rgba(26, 21, 146, 0.5)); */
+        display: inline-block;
+        /* vertical-align: top; */
+        margin-left: 8px;
+
+    }
+
+    figure,
+    figcaption {
+        display: inline-block;
+    }
+
+    .st {
+        display: inline-block;
+        /* margin-bottom: 20px; */
+         /* padding-bottom: 50px;  */
+    }
+
+    .ab {
+        font-weight: lighter;
+        font-size: 18px;
+        line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  /* margin-bottom: 50px; */
+  /* padding-bottom: 20px; */
+}
+
+
+    .lcl{
+        margin-left: 28%;
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 1px;
+        /* text-align: center;
+        margin-right: 30px; */
+    }
+
+
+     .last{
+        /* text-align: center; */
+        margin-left: 27.5%;
+        font-weight: 575;
+        line-height: 1.9;
+        letter-spacing: 0.5px;
+        word-spacing: 1px;
+        margin-bottom: 5px;
+        display: inline-block;
+        margin-top: 8px;
+        /* matop */
+        margin-bottom: 30px;
+    }
+
+    #lb{
+        /* display: inline-block; */
+        position: absolute;
+        top: 1205px;
+        right: 330px;
+    }
+
+    /* footer{
+        padding: 0;
+        border: 0;
+        background-color: #1F2D4E;
+        /* height: 80px; */
+
+        
+    .ltsp{
+        /* padding-top: 0; */
+        height: 100px;
+        /* padding: 25px; */
+        background-color: #1F2D4E;
+    }
+
+   
+    h3{
+        color: #FCFAFA;
+        font-size: 30px;
+        letter-spacing: 0.75px;
+        /* margin-top: 500px; */
+        padding-top: 1px;
+        padding-left: 60px;
+        display: inline-block;
+        /* width: 100%; */
+         
+         margin-bottom: 0;
+         height: 50px;
+    }
+    #lat{
+        color: #EEF2F1;
+        /* margin-bottom:  */
+        padding-left: 857px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    #lats{
+        padding-left: 80px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #EEF2F1;
+        /* letter-spacing: 1px; */
+        /* padding: top; */
+    }
+
+    /* .gap{
+        display: block;
+    } */
+
+    /* figcaption{
+        padding-top: 12px;
+    } */
+
+
+    /* #m{
+         /* margin-left: 300px; */
+         /* .af{
+            display: flex;
+            flex-wrap: wrap;
+         } */
+</style>
+
+<body>
+    <div class="af">
+    <header>
+        <div id="img">
+            <div class="Stg"><strong>TechCo</strong></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active anc">Home</a></li>
+                    <li><a href="features.html" class="anc">Features</a></li>
+                    <li><a href="" class="anc">Testimonials</a></li>
+                    <li><a href="" class="anc">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="center">
+            <h1>
+                <div class="h1">Innovative Solutions for</div>
+                <div class="h1">Tech-Driven World</div>
+            </h1>
+            <img src="Screenshot 2025-10-29 085842.png" alt="Laptop" height="225" width="220px">
+        </div>
+        <p class="p">
+            We provide cutting-edge technology solutions to help <br> businesses stay ahead of the curve.
+        </p>
+        <br>
+        <button type=""><a href="http://" class="anc">Learn More</a></button>
+        <h2 class="re">
+            About Us
+        </h2>
+        <p class="about">TechCo is a leading technology company dedicated to delivering innovative solutions <br> and
+            exceptional services to our clients worldwide.</p>
+        <section class="two">
+            <h2 class="os">Our Services</h2>
+
+            <div class="cotner">
+
+                <div class="imger" id="m">
+                    <figure>
+                        <img src="Screenshot 2025-10-31 022657.png" alt="" height="100" width="120">
+                        <figcaption>
+                            <div class="imgg"><b>Software Developement</b></div>
+                        </figcaption>
+                    </figure>
+                    <div class="st">
+                        <div class="ab">
+                            <strong>
+                                Custom software solutions tailored to your business needs.
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imger">
+                    <figure>
+                        <img src="Screenshot 2025-10-31 022705.png" alt="" height="100" width="120">
+                        <figcaption>
+                            <div class="imgg">
+                                <b>Software Developement</b>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="st">
+                        <div class="ab">
+                            <strong>
+                                Scalable and secure cloud services to enhance your operations.
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imger">
+                    <figure>
+                        <img src="Screenshot 2025-10-31 022712.png" alt="" height="100" width="120">
+                        <figcaption>
+                            <div class="imgg"><b>Software Developement</b></div>
+                        </figcaption>
+                    </figure>
+                    <div class="st">
+                        <div class="ab">
+                            <strong>
+                                Robust cybersecurity measures to protect your data.
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <h2 class="lcl">Contact</h2>
+            <p class="last">
+                Ready to get started? Reach out to us to learn more about <br> our services and how we can help your
+                business.
+            </p>
+            <button id="lb"><a href="" class="anc">Contact Us</a></button>
+        </section>
+    </main>
+    <footer>
+        <div class="ltsp"><h3>TechCo</h3>
+        <a href="" id="lat">Policy Privacy</a>
+        <a href="" id="lats">Terms of Service</a></div>
+    </footer>
+    </div>
+</body>
+
+</html>
